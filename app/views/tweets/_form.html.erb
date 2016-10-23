@@ -1,0 +1,14 @@
+<%= form_for @tweet do |f| %>
+    <div class='form-field'>
+        <%= f.label :handle, class: 'label' %>
+        <%= f.text_field :handle, :maxlength => 15, class: 'text-field' %>
+        <br>
+        <%= f.label :content, class: 'label' %>
+        <%= f.text_field :content, :maxlength => 140, class: 'text-field' %>        
+    </div>
+    <div class='button'>
+    <%= f.submit "save changes" %>
+    </div>
+<% end %>
+    <%= link_to "Back to the tweets", tweets_path %>
+

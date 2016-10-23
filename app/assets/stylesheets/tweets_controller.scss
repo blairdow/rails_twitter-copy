@@ -1,0 +1,122 @@
+// Place all the styles related to the tweets_controller controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    font-family: 'Bungee Hairline', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-sizee: 1.5em;
+}
+
+body {
+    background-image: image-url('galaxy.jpg');
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+ul {
+   list-style: none; 
+}
+
+li, .add-tweet, .form, .show {
+    border: 1px dotted white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.tweet, .label, input[type=submit] {
+    font-size: 1.5em;
+}
+
+li {
+    margin-right: 10%;
+    margin-left: 10%;
+    max-width: 70%;
+    min-width: 30px;
+}
+
+.add-tweet, .back-tweet {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-tweet {
+    width: 250px;
+}
+
+.back-tweet {
+    width: 300px;
+}
+
+a {
+    color: aqua;
+}
+
+a:hover, input[type=submit]:hover, .edit-delete a:hover {
+    text-decoration: line-through;
+    color: #ff80ff;
+}
+
+input {
+    width: 70%;
+    color: #a850ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+input[type=text] {
+    margin-left: 5%;
+    
+}
+
+input[type=submit] {
+    color: white;
+    font-size: 1.75em;
+    margin: 20px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.form {
+    width: 70%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.text-field {
+    font-size: 1.25em;
+}
+
+.show {
+    text-align: center;
+    width: 70%;
+}
+
+.edit-delete a {
+    color: #a850ff;
+}

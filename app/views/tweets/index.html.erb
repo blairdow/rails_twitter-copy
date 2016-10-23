@@ -1,0 +1,21 @@
+
+<div class="feed">
+<h1>Tweets.in.space!</h1>
+    <ul>
+    <% @tweets.each do |tweet| %>
+       <li>
+        <div class='tweet'>
+            <%= tweet.handle %> - <%= link_to tweet.content, tweet_path(tweet.id) %> <br>
+        </div>
+        <div class="edit-delete">
+         <%= link_to 'edit', edit_tweet_path(tweet.id) %>
+        <%= link_to 'delete', tweet_path(tweet.id), method: 'delete', data: {confirm: 'You sure?'} %>
+        </div>
+       </li>
+    <% end %>
+    </ul>
+</div>
+
+<div class="add-tweet">
+    <%= link_to 'new tweet', new_tweet_path %>
+</div>

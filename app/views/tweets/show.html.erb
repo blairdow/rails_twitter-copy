@@ -1,0 +1,19 @@
+
+<div class="wrapper">
+<h1>tweet.in.space</h1>
+<ul class='show'>
+
+    <div class='tweet'>
+        <%= @tweet.handle %> - <%= @tweet.content %>
+    </div>
+    <div class="edit-delete">
+        <%= link_to 'Edit', edit_tweet_path(@tweet) %>
+        <%= link_to 'Delete', tweet_path(@tweet), method: 'delete', data: {confirm: 'You sure?'} %>
+    </div>
+</ul>
+    
+<div class='add-tweet'>
+<%= link_to 'Back to the tweets!', tweets_path %>
+</div>
+</div>
+
